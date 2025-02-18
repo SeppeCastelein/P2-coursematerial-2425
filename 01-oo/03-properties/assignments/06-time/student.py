@@ -37,6 +37,8 @@ class Time:
         else:
             raise ValueError("Invalid seconds: must be between 0 and 59")
 
+def printHello():
+    return("Hello")
 # Example usage:
 time = Time(0, 0, 0)
 time.hours = 8
@@ -50,4 +52,4 @@ try:
 except ValueError as e:
     print(e)  # Output: Invalid hours: must be between 0 and 23
 
-
+print(printHello())
